@@ -1,0 +1,43 @@
+const filterButtons = document.querySelectorAll(
+  ".container__filter--buttons button"
+);
+const filterableCards = document.querySelectorAll(".card .filterable__cards");
+
+const filterCards = (e) => {
+  document.querySelector(".activee").classList.remove("activee");
+  e.target.classList.add("activee");
+
+  filterableCards.forEach((card) => {
+    card.classList.add("hide");
+    if (
+      card.dataset.name === e.target.dataset.name ||
+      e.target.dataset.name === "all"
+    ) {
+      card.classList.remove("hide");
+    }
+  });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselItems = document.querySelectorAll(".container__carousel--list");
+  let currentIndex = 0;
+
+  function showItem(index) {
+    carouselItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    carouselItems[index].classList.add("active");
+  }
+
+  showItem(currentIndex);
+
+  const interval = setInterval(function () {
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    showItem(currentIndex);
+  }, 3000);
+});
+
+filterButtons.forEach((button) =>
+  button.addEventListener("click", filterCards)
+);
