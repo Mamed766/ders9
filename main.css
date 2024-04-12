@@ -171,6 +171,9 @@ i {
   align-items: center;
   gap: 1rem;
 }
+.footer__internal--links > a > i {
+  color: gray;
+}
 
 button {
   cursor: pointer;
