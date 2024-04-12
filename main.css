@@ -774,7 +774,7 @@ footer a {
   } */
 
   .container__hover {
-    transform: translate(calc(50% - 190px), calc(50% - 150px));
+    transform: translate(calc(50% - 350px), calc(50% - 150px));
   }
 
   .card__content--desc {
