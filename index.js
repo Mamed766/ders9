@@ -44,21 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 3000);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburgerIcon = document.querySelector(".hamburger-icon");
-  const navbarLeft = document.querySelector(".container__navbar--left");
-  const navbarRight = document.querySelector(".container__navbar--right");
-
-  // Hamburger menüyü aç/kapat fonksiyonu
-  function toggleMenu() {
-    navbarLeft.classList.toggle("active");
-    navbarRight.classList.toggle("active");
-  }
-
-  // Hamburger menü ikonuna tıklandığında menüyü aç/kapat
-  hamburgerIcon.addEventListener("click", toggleMenu);
-});
-
 filterButtons.forEach((button) =>
   button.addEventListener("click", filterCards)
 );
