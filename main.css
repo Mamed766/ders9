@@ -349,6 +349,15 @@ button.activee {
   display: none;
 } */
 
+.filterable__cards {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.container__filter div:last-child > .filterable__cards {
+  border-bottom: none;
+}
+
 .filterable__cards.hide {
   display: none;
 }
@@ -477,17 +486,18 @@ button.activee {
   margin-top: 3rem;
   width: 100%;
 }
+
 .container__company > div:first-child {
   /* margin-top: 3rem; */
   display: flex;
   /* justify-content: center; */
-
   align-items: center;
 }
 .container__company > div h2 {
   flex-grow: 5;
   margin-left: 10rem;
 }
+
 .container__company > div button {
   flex-grow: 1;
 
