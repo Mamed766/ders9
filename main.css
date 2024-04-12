@@ -96,9 +96,26 @@ body.show-overlay {
 .container__navbar--left {
   flex-grow: 5;
 }
+.container__navbar--left button:hover {
+  color: #0159bb;
+}
 
 .container__navbar--right {
   flex-grow: 3;
+}
+
+.container__navbar button {
+  transition: all 0.25s ease-in-out;
+}
+
+.container__navbar--right > div:hover button i {
+  transition: all 0.25s ease-in-out;
+}
+
+.container__navbar--right > div:hover button,
+.container__navbar--right > div:hover button i,
+i {
+  color: #0159bb;
 }
 
 .container__navbar--left > div {
