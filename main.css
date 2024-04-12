@@ -47,10 +47,12 @@ body {
   border-radius: 2rem;
   padding: 2.5rem;
   left: calc(50% - 400px);
+
   justify-content: center;
   background-color: #fafafa;
   top: -10rem;
   z-index: 100;
+
   display: none;
   line-height: 2;
 }
@@ -683,6 +685,10 @@ footer a {
   gap: 2rem;
   color: gray;
   background-color: #f2f2f7;
+}
+
+footer {
+  font-size: 14px;
 }
 
 .hamburger-menu {
