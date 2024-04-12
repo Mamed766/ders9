@@ -126,6 +126,7 @@ body.show-overlay {
   gap: 0.8rem;
   border: none;
 }
+
 .container__navbar--left button {
   background-color: #fafafa;
 }
@@ -648,6 +649,10 @@ footer a {
   background-color: #f2f2f7;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 10px;
@@ -675,9 +680,15 @@ footer a {
 
   .container__navbar {
     position: relative;
-    flex-direction: column;
-    gap: 0.5rem;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .container__navbar--left > div,
+  .container__navbar--left > button {
+    display: none;
   }
 
   /* Filter buttons */
