@@ -69,7 +69,19 @@ body {
   display: flex;
   justify-content: center;
 }
+button {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+/* 
+.container__navbar--left img {
+  width: 10%;
+  cursor: pointer;
+} */
 
+.container__navbar--left > a {
+  color: black;
+}
 .container__hover--content > div {
   display: flex;
   flex-direction: column;
@@ -175,8 +187,12 @@ i {
   color: gray;
 }
 
-button {
-  cursor: pointer;
+.ipo i {
+  transition: all 0.25s ease-in-out;
+}
+.ipo:hover i:nth-child(2) {
+  /* transition: all 0.25s ease-in-out;s */
+  transform: translateY(5px);
 }
 
 .container__navbar--right div:nth-child(1) button {
