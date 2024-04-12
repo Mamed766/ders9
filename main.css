@@ -46,7 +46,8 @@ body {
   width: 50%;
   border-radius: 2rem;
   padding: 2.5rem;
-  left: calc(50% - 500px);
+  left: calc(50% - 400px);
+  justify-content: center;
   background-color: #fafafa;
   top: -10rem;
   z-index: 100;
@@ -56,6 +57,7 @@ body {
 
 .container__hover.show {
   display: flex;
+
   /* top: -10rem; */
 }
 
@@ -627,7 +629,7 @@ footer a {
   background-color: #f2f2f7;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .container__filter {
     display: flex;
     flex-wrap: wrap;
@@ -772,7 +774,7 @@ footer a {
   } */
 
   .container__hover {
-    transform: translate(calc(50% - 150px), calc(50% - 150px));
+    transform: translate(calc(50% - 190px), calc(50% - 150px));
   }
 
   .card__content--desc {
