@@ -3,6 +3,28 @@ const filterButtons = document.querySelectorAll(
 );
 const filterableCards = document.querySelectorAll(".card .filterable__cards");
 
+// IPO
+const ipoteka = document.querySelector(".ipo");
+const containerHover = document.querySelector(".container__hover");
+
+ipoteka.addEventListener("mouseover", () => {
+  containerHover.classList.add("show");
+  document.body.classList.add("show-overlay");
+
+  timeoutId = setTimeout(() => {
+    containerHover.classList.remove("show");
+    document.body.classList.remove("show-overlay");
+  }, 10000);
+});
+
+ipoteka.addEventListener("mouseout", () => {
+  containerHover.classList.remove("show");
+  document.body.classList.remove("show-overlay");
+  clearTimeout(timeoutId);
+});
+
+// Filter
+
 const filterCards = (e) => {
   document.querySelector(".activee").classList.remove("activee");
   e.target.classList.add("activee");
