@@ -34,6 +34,10 @@ body {
   width: 10rem;
   margin-bottom: 0.5rem;
 }
+.daxili {
+  color: #fff;
+  background-color: #0159bb;
+}
 
 .container__hover {
   margin-top: 15rem;
