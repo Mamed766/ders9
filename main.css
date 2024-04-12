@@ -122,7 +122,7 @@ body.show-overlay {
 
 .container__navbar--left > div button {
   display: flex;
-  background-color: #fff;
+  background-color: #fafafa;
   gap: 0.8rem;
   border: none;
 }
