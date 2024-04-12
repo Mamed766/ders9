@@ -229,6 +229,30 @@ button {
   align-items: center;
 }
 
+.container__carousel--list__item.family {
+  background-color: #c29792;
+}
+
+.container__carousel--list__item.abroad {
+  background-color: #8b98ab;
+}
+
+.container__carousel--list__item.land {
+  background-color: #a5b954;
+}
+
+.container__carousel--list__item.home {
+  background-color: #8461cd;
+}
+
+.container__carousel--list__item.state {
+  background-color: #2d78d1;
+}
+
+.container__carousel--list__item.building {
+  background-color: #d8db59;
+}
+
 .container--information__buttons {
   display: flex;
   gap: 1rem;
@@ -335,6 +359,38 @@ button.activee {
   background-color: #01c4e5;
   width: 30rem;
   border-radius: 2rem;
+}
+
+.card__img img.family {
+  background-color: #c29792;
+}
+
+.card__img img.abroad {
+  background-color: #8b98ab;
+}
+
+.card__img img.land {
+  background-color: #a5b954;
+}
+
+.card__img img.home {
+  background-color: #8461cd;
+}
+
+.card__img img.state {
+  background-color: #2d78d1;
+}
+
+.card__img img.building {
+  background-color: #d8db59;
+}
+
+.card__img img.menzil {
+  background-color: #0159bb;
+}
+
+.card__img img.gence {
+  background-color: #4f81cd;
 }
 
 /* CARD INFORMATION */
