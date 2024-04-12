@@ -523,6 +523,15 @@ button.activee {
   display: flex;
   gap: 2.5rem;
 }
+
+.container__company--card > div {
+  padding-bottom: 2rem;
+}
+
+.container__company--card > div:first-child {
+  border-bottom: 1px solid #e3e3e3;
+}
+
 .container__company--card > div:nth-child(2) {
   display: flex;
   gap: 9rem;
