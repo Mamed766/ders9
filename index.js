@@ -6,6 +6,7 @@ const filterableCards = document.querySelectorAll(".card .filterable__cards");
 // IPO
 const ipoteka = document.querySelector(".ipo");
 const containerHover = document.querySelector(".container__hover");
+let isHoveringContainer = false;
 
 // Filter
 
@@ -48,12 +49,38 @@ filterButtons.forEach((button) =>
   button.addEventListener("click", filterCards)
 );
 
+// ipoteka.addEventListener("mouseover", () => {
+//   containerHover.classList.add("show");
+//   document.body.classList.add("show-overlay");
+// });
+
+// ipoteka.addEventListener("mouseout", () => {
+//   containerHover.classList.remove("show");
+//   document.body.classList.remove("show-overlay");
+// });
+
+// containerHover.addEventListener("mouseover", () => {
+//   console.log("salam");
+//   isHoveringContainer = true;
+// });
+
+// containerHover.addEventListener("mouseout", () => {
+//   isHoveringContainer = false;
+// });
+
 ipoteka.addEventListener("mouseover", () => {
-  containerHover.classList.add("show");
-  document.body.classList.add("show-overlay");
+  isHoveringContainer = true;
+  if (isHoveringContainer) {
+    containerHover.classList.add("show");
+    document.body.classList.add("show-overlay");
+  }
 });
 
 ipoteka.addEventListener("mouseout", () => {
-  containerHover.classList.remove("show");
-  document.body.classList.remove("show-overlay");
+  isHoveringContainer = false;
+
+  if (!isHoveringContainer) {
+    containerHover.classList.remove("show");
+    document.body.classList.remove("show-overlay");
+  }
 });
